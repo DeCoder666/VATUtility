@@ -17,8 +17,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String TAG = "MainActivity";
-
     private LineChart mRevenueChart;
 
     @Override
@@ -26,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Initialize the graph
+        createGraph();
+
+        //TODO: Link  to AddTransaction activity
+
+    }
+
+    //Creates the revenue graph displayed on the homepage. using MPAndroidChart
+    private void createGraph(){
         mRevenueChart = findViewById(R.id.linechart); //Chart for displaying monthly revenue
 
         ArrayList<Entry> yValues = new ArrayList<Entry>();
