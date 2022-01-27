@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">VATUtility</string>
+    <string name="label">עלות שירות (לקיזוז ממע\"מ)</string>
 </resources>
